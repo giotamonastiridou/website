@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Κλινική Ψυχολόγος - Γιώτα Παπαδοπούλου</title>
+  <title>Γιώτα Μοναστηρίδου - Ψυχολόγος - Ψυχοθεραπεύτρια</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     * {
@@ -11,11 +11,13 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #f8f8f8;
+      background-color: #f9f9f9;
       color: #333;
     }
+
     header {
       background-color: #ffffff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -27,16 +29,23 @@
       top: 0;
       z-index: 10;
     }
+
     nav ul {
       list-style: none;
       display: flex;
       gap: 20px;
     }
+
     nav ul li a {
       text-decoration: none;
       color: #333;
       font-weight: bold;
     }
+
+    nav ul li a:hover {
+      color: #4a90e2;
+    }
+
     .hero {
       background-image: url('https://images.pexels.com/photos/3343253/pexels-photo-3343253.jpeg');
       background-size: cover;
@@ -47,52 +56,87 @@
       justify-content: center;
       color: white;
       text-shadow: 0 0 10px rgba(0,0,0,0.6);
-    }
-    .hero h1 {
-      font-size: 3rem;
       text-align: center;
     }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      max-width: 90%;
+    }
+
     .section {
-      padding: 60px 40px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      background-color: white;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+
     .section h2 {
       margin-bottom: 20px;
       color: #2a2a2a;
     }
+
     .section p {
       line-height: 1.8;
+      margin-bottom: 15px;
     }
+
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     .service-box {
-      background-color: white;
+      background-color: #f1f5f9;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: 0.3s;
     }
+
+    .service-box:hover {
+      background-color: #e0ebf5;
+    }
+
     footer {
-      background-color: #333;
+      background-color: #2a2a2a;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
+
+    footer p {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 768px) {
       nav ul {
         flex-direction: column;
         gap: 10px;
       }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div><strong>Γιώτα Παπαδοπούλου</strong></div>
+    <div><strong>Γιώτα Μοναστηρίδου</strong></div>
     <nav>
       <ul>
         <li><a href="#home">Αρχική</a></li>
@@ -112,31 +156,53 @@
     <div class="services">
       <div class="service-box">
         <h3>Ατομική Ψυχοθεραπεία</h3>
-        <p>Ενίσχυση της ψυχικής υγείας με προσωπικές συνεδρίες σε ασφαλές περιβάλλον.</p>
+        <p>Ενίσχυση της ψυχικής υγείας με προσωπικές συνεδρίες σε ασφαλές και υποστηρικτικό περιβάλλον.</p>
       </div>
       <div class="service-box">
         <h3>Συμβουλευτική Ζευγαριών</h3>
-        <p>Βοήθεια στην επικοινωνία, σύνδεση και κατανόηση σε σχέσεις.</p>
+        <p>Υποστήριξη για την ενίσχυση της επικοινωνίας και της σύνδεσης στις διαπροσωπικές σχέσεις.</p>
       </div>
       <div class="service-box">
         <h3>Στήριξη Εφήβων</h3>
-        <p>Καθοδήγηση σε κρίσιμες περιόδους ανάπτυξης και ταυτότητας.</p>
+        <p>Ψυχολογική καθοδήγηση σε κρίσιμες αναπτυξιακές φάσεις και θέματα ταυτότητας.</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="about">
     <h2>Σχετικά με εμένα</h2>
-    <p>Είμαι Κλινική Ψυχολόγος με εμπειρία σε ενήλικες και εφήβους. Εστιάζω στη δημιουργία εμπιστοσύνης και σεβασμού, προσφέροντας ένα υποστηρικτικό περιβάλλον για θεραπεία και προσωπική ανάπτυξη.</p>
+    <p>
+      Η <strong>Μοναστηρίδου Παναγιώτα – Ειρήνη</strong> είναι <strong>Ψυχολόγος – Ψυχοθεραπεύτρια</strong> με εμπειρία στην υποστήριξη ενηλίκων και εφήβων. 
+      Είναι απόφοιτη του Τμήματος Ψυχολογίας του <strong>Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης</strong>.
+    </p>
+    <p>
+      Πραγματοποίησε την πρακτική της άσκηση στο <strong>Ψυχιατρικό Νοσοκομείο Θεσσαλονίκης (Ψ.Ν.Θ.)</strong> και συμμετείχε εθελοντικά σε φορείς ψυχικής υγείας 
+      και στην πλατφόρμα <strong>"Μίλα μου"</strong>.
+    </p>
+    <p>
+      Βρίσκεται σε διαρκή επαγγελματική εξέλιξη, με συνεχή επιμόρφωση στη <strong>Συστημική – Συνθετική Ψυχοθεραπεία</strong> και παρακολούθηση σχετικών σεμιναρίων και συνεδρίων.
+    </p>
+    <p>
+      Προσφέρει <strong>ατομικές συνεδρίες ψυχοθεραπείας και συμβουλευτικής</strong> με στόχο την ουσιαστική στήριξη και ανάπτυξη κάθε ανθρώπου.
+    </p>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Επικοινωνία</h2>
-    <p>Μπορείτε να επικοινωνήσετε μαζί μου στο <strong>email@example.com</strong> ή στο <strong>1234 567890</strong>. Συνεδρίες δια ζώσης ή online.</p>
-  </section>
+<section class="section" id="contact">
+  <h2>Επικοινωνία</h2>
+  <p>
+    Μπορείτε να επικοινωνήσετε μαζί μου για ραντεβού ή απορίες:
+  </p>
+  <p><strong>📍 Τοποθεσία:</strong> Εύοσμος, Θεσσαλονίκη</p>
+  <p><strong>📧 Email:</strong> <a href="mailto:giota.monastiridou@yahoo.gr">giota.monastiridou@yahoo.gr</a></p>
+  <p><strong>📞 Τηλέφωνο:</strong> <a href="tel:6972864352">6972864352</a></p>
+  <p>Διαθέσιμες συνεδρίες <strong>δια ζώσης στον Εύοσμο</strong> και <strong>online</strong>.</p>
+</section>
+
 
   <footer>
-    <p>&copy; 2025 Μαρία Παπαδοπούλου - Κλινική Ψυχολόγος</p>
+    <p>&copy; 2024 Γιώτα Μοναστηρίδου</p>
+    <p>Ψυχολόγος – Ψυχοθεραπεύτρια | Εύοσμος</p>
   </footer>
+
 </body>
 </html>

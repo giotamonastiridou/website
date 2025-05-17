@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Κλινική Ψυχολόγος - Γιώτα Παπαδοπούλου</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.pexels.com/photos/3343253/pexels-photo-3343253.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+      color: #2a2a2a;
+    }
+    .section p {
+      line-height: 1.8;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Γιώτα Παπαδοπούλου</strong></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Αρχική</a></li>
+        <li><a href="#services">Υπηρεσίες</a></li>
+        <li><a href="#about">Σχετικά</a></li>
+        <li><a href="#contact">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Ψυχολογική Στήριξη & Θεραπεία</h1>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Υπηρεσίες</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Ατομική Ψυχοθεραπεία</h3>
+        <p>Ενίσχυση της ψυχικής υγείας με προσωπικές συνεδρίες σε ασφαλές περιβάλλον.</p>
+      </div>
+      <div class="service-box">
+        <h3>Συμβουλευτική Ζευγαριών</h3>
+        <p>Βοήθεια στην επικοινωνία, σύνδεση και κατανόηση σε σχέσεις.</p>
+      </div>
+      <div class="service-box">
+        <h3>Στήριξη Εφήβων</h3>
+        <p>Καθοδήγηση σε κρίσιμες περιόδους ανάπτυξης και ταυτότητας.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Σχετικά με εμένα</h2>
+    <p>Είμαι Κλινική Ψυχολόγος με εμπειρία σε ενήλικες και εφήβους. Εστιάζω στη δημιουργία εμπιστοσύνης και σεβασμού, προσφέροντας ένα υποστηρικτικό περιβάλλον για θεραπεία και προσωπική ανάπτυξη.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Επικοινωνία</h2>
+    <p>Μπορείτε να επικοινωνήσετε μαζί μου στο <strong>email@example.com</strong> ή στο <strong>1234 567890</strong>. Συνεδρίες δια ζώσης ή online.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Μαρία Παπαδοπούλου - Κλινική Ψυχολόγος</p>
+  </footer>
+</body>
+</html>
